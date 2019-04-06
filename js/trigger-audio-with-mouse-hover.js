@@ -77,13 +77,11 @@ function draw() {
         (mouseY >= 0) && (mouseY < (HEIGHT / 2))) {
         if (previousMouseLocation !== TOP_LEFT) {
             topLeftAudio.play();
-            topRightAudio.stop();
             currentlyPlaying = TOP_LEFT;
         } else {
             if ((previousMouseLocation === TOP_LEFT) &&
                 (currentlyPlaying !== TOP_LEFT)) {
                 topLeftAudio.stop();
-                topRightAudio.stop();
             }
         }
 
