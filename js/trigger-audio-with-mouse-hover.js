@@ -73,6 +73,7 @@ function setup () {
 }
 
 function draw () {
+    // Check if the mouse is in the top left quadrant
     if ((mouseX >= 0) && (mouseX < (WIDTH / 2)) &&
         (mouseY >= 0) && (mouseY < (HEIGHT / 2))) {
         if (previousMouseLocation !== TOP_LEFT) {
@@ -88,6 +89,7 @@ function draw () {
         previousMouseLocation = TOP_LEFT;
     }
 
+    // Check if the mouse is in the top right quadrant
     if ((mouseX >= (WIDTH / 2)) && (mouseX < WIDTH) &&
         (mouseY >= 0) && (mouseY < (HEIGHT / 2))) {
         if (previousMouseLocation !== TOP_RIGHT) {
@@ -104,6 +106,7 @@ function draw () {
         previousMouseLocation = TOP_RIGHT;
     }
 
+    // Check if the mouse is in the bottom left quadrant
     if ((mouseX >= 0) && (mouseX < (WIDTH / 2)) &&
         (mouseY >= (HEIGHT / 2)) && (mouseY < HEIGHT)) {
         if (previousMouseLocation !== BOTTOM_LEFT) {
@@ -120,6 +123,7 @@ function draw () {
         previousMouseLocation = BOTTOM_LEFT;
     }
 
+    // Check if the mouse is in the bottom right quadrant
     if ((mouseX >= (WIDTH / 2)) && (mouseX < WIDTH) &&
         (mouseY >= (HEIGHT / 2)) && (mouseY < HEIGHT)) {
         if (previousMouseLocation !== BOTTOM_RIGHT) {
