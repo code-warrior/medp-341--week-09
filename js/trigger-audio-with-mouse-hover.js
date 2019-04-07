@@ -56,14 +56,14 @@ let drawQuadrant = (quadrant) => {
     }
 };
 
-function preload() {
+function preload () {
     topLeftAudio = loadSound(audioFiles[0]);
     topRightAudio = loadSound(audioFiles[1]);
     bottomLeftAudio = loadSound(audioFiles[2]);
     bottomRightAudio = loadSound(audioFiles[3]);
 }
 
-function setup() {
+function setup () {
     createCanvas(WIDTH, HEIGHT);
 
     drawQuadrant(`top left`);
@@ -72,7 +72,7 @@ function setup() {
     drawQuadrant(`bottom right`);
 }
 
-function draw() {
+function draw () {
     if ((mouseX >= 0) && (mouseX < (WIDTH / 2)) &&
         (mouseY >= 0) && (mouseY < (HEIGHT / 2))) {
         if (previousMouseLocation !== TOP_LEFT) {
